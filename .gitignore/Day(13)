@@ -1,0 +1,10 @@
+#Write a python program for all the cases which can check a strong contains  only a certain set of character's
+
+import re
+def allow_char(string):
+    charRe = re.compile(r'[^a-zA-Z0-9.]')
+    string = charRe.search(string)
+    return not bool(string)
+
+print(allow_char("Sandhiya79")) 
+print(allow_char("*{"))
