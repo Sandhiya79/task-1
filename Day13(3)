@@ -1,0 +1,12 @@
+#write a python program to match only upper case letter
+
+import re
+def text_match(text):
+        patterns = '\w*[A-Z].\w*'
+        if re.search(patterns,  text):
+                return 'Found a match!'
+        else:
+                return('Not matched!')
+
+print(text_match("BOOTCAMP."))
+print(text_match("python exercises."))
