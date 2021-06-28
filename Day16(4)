@@ -1,0 +1,6 @@
+#multiplies the argument using lambda fuction
+
+multi = lambda x, y : x * y
+print(multi(5, 20))
+ 
+print("\nResult from a multi Function")
